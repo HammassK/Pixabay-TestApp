@@ -9,6 +9,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 const PostCard = props => {
   const imageURI = props.data.userImage;
+  const postURI = props.data.largeImageURL;
 
   return (
     <Card containerStyle={styles.container}>
@@ -26,7 +27,7 @@ const PostCard = props => {
         <Card.Image
           style={{width: wp('80'), borderRadius: hp('1')}}
           source={{
-            uri: 'https://awildgeographer.files.wordpress.com/2015/02/john_muir_glacier.jpg',
+            uri: postURI,
           }}
         />
       </View>
