@@ -4,12 +4,10 @@ import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
-
 import Icon from 'react-native-vector-icons/Ionicons';
-
 import {Overlay} from 'react-native-elements';
 
-const Header = props => {
+const Header = () => {
   const [visible, setVisible] = useState(false);
 
   const toggleOverlay = () => {
@@ -66,11 +64,13 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     flexDirection: 'row',
+    width: wp('15'),
+    justifyContent: 'space-around',
   },
   headerTitle: {
     fontSize: hp('3'),
     fontWeight: 'bold',
-    color: '#b7cedf',
+    color: '#fff',
   },
   overlayLabels: {
     fontSize: hp('2'),
